@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+} 
+  
+    .header{
+    text-align: center;
+    color:white;
+    background-color: black;
+    padding:1%;
+}
+
+.form {
+    --input-focus: #368eec;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    padding: 32px;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+  }
+  
+  .title {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+
+    .menu {
+    overflow: hidden;
+    position: sticky;
+    offset-distance: 10px;
+    }
+    .a{
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .menu a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: 700;
+    
+    }
+    .menu a:hover {
+    background-color: rgb(46, 124, 193);
+    color: rgb(255, 255, 255);
+    border: black;
+    font-weight: 700;
+    }
+    
+    .column{
+        float: left;
+        padding: 10px;
+        width: 30%;
+    }
+    .leftcolumn{
+        float: left;
+        margin-left: 20px;
+        padding: 20px;
+        padding-left: 10px;
+        padding-top: 30px;
+        width: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .rightcolumn{
+        float: right;
+        padding: 50px;
+        width: 75%;
+        font-size: 20px;
+        padding: 30px;
+        height: 600px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 20px;  
+    }
+    
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+        width: 100%;
+       }
+    }
+
+    .btn{
+        margin-left: 15px;
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+    .btn:hover{
+        border: 30px;
+        color: blue;
+        border-color: rgb(46, 61, 137);
+        align-items: center;
+    }
+
+    .glow {
+        background-color: lightgrey;
+        font-size: 17px;
+        text-align: center;
+        animation: glow 4s ease-in-out infinite alternate;
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        font-weight: 700;
+        color: blue;
+        align-items: center;
+        border: 2px;
+      }
+      
+    @keyframes glow {
+        from {
+          text-shadow: 0 0 10px lightgrey, 0 0 20px lightgrey, 0 0 30px rgb(45, 57, 225) 0 0 40px rgb(45, 63, 225), 0 0 50px rgb(50, 74, 228), 0 0 60px rgb(51, 45, 225), 0 0 70px rgb(45, 108, 225);
+        }
+        to {
+          text-shadow: 0 0 20px lightgrey, 0 0 30px rgb(45, 63, 225), 0 0 40px rgb(45, 93, 225), 0 0 50px rgb(45, 75, 225), 0 0 60px rgb(63, 45, 225), 0 0 70px rgb(45, 69, 225), 0 0 80px rgb(45, 51, 225);
+        }
+    }
+
+
+
+.floor{
+    font-weight: 200;
+    padding: 10px;
+    padding-left: 5px;    
+}
+
+.img{
+    height: 100px;
+    padding-left: 30px;
+    margin-left:60px;
+}
+
+.cfloor{
+    font-weight: 700;
+    padding: 2px;
+    padding-left: 50px;
+    align-items: center;
+    height: 550px;
+    border-style: dotted;
+}
+
+.carfloor{
+    align-items: center;
+    text-align: center;
+}
+.carf{
+    padding-left:50px;
+    padding-top: 5px;
+    height: 20px;
+    width: 1000px;
+    margin-left: 2px;
+
+}
+.cimg{
+    display: inline; 
+    float: right;
+    padding-left: 3px;
+    height: 400px; 
+    padding-right: 150px;
+   
+    
+}
+/*Admin PROFLE*/
+.changepass{
+    margin-left:400px;
+}
+
+/*PROFILE PIC*/
+.container .profile{
+    padding:20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 400px;
+    border-radius: 5px;
+ }
+ 
+ .container .profile img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+ }
+ 
+ .container .profile h3{
+    margin:5px 0;
+    font-size: 20px;
+    color:var(--black);
+ }
+ 
+ .container .profile p{
+    margin-top: 20px;
+    color:var(--black);
+    font-size: 20px;
+ }
+ 
+ .container .profile p a{
+    color:var(--red);
+ }
+ 
+ .container .profile p a:hover{
+    text-decoration: underline;
+ }
+ 
+ .update{
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+ }
+ 
+ .update{
+    padding:20px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: 700px;
+    text-align: center;
+    border-radius: 5px;
+ }
+ 
+ .update{
+    height: 200px;
+    width: 200p;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+ }
+ 
+ .update .flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap:15px;
+ }
+ 
+ .update .flex .inputBox{
+    width: 49%;
+ }
+ 
+ .update.flex .inputBox span{
+    text-align: left;
+    display: block;
+    margin-top: 15px;
+    font-size: 17px;
+    color:var(--black);
+ }
+ 
+ .update- .flex .inputBox .box{
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--light-bg);
+    padding:12px 14px;
+    font-size: 17px;
+    color:var(--black);
+    margin-top: 10px;
+ }
+ 
+ @media (max-width:650px){
+    .update-profile form .flex{
+       flex-wrap: wrap;
+       gap:0;
+    }
+    .update-profile form .flex .inputBox{
+       width: 100%;
+    }
+ }
+
+
+
+
+
+
+  
